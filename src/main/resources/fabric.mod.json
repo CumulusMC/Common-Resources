@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "common-resources",
+  "version": "${version}",
+  "name": "Common Resources",
+  "description": "",
+  "authors": [
+    "Vaerian"
+  ],
+  "contact": {
+    "sources": "https://github.com/Vaerian/Common-Resources"
+  },
+  "license": "MIT or APACHE",
+  "icon": "assets/common-resources/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.cumulusmc.commonresources.impl.CommonResources"
+    ],
+    "common_resource": [
+      "com.cumulusmc.commonresources.impl.CommonResourceEntrypoint"
+    ]
+  },
+  "mixins": [
+    "common-resources.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
